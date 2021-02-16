@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class LevelContext
+public class LevelContextScript : MonoBehaviour
 {
-    public static int Wampas_fruitScore;
+    public int nb_WampasFruit = 0;
 }
