@@ -20,7 +20,7 @@ public class mainmenu : MonoBehaviour
     }
     public void Die()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     public void displayoptions()
     {
