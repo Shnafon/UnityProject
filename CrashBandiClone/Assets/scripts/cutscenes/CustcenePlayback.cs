@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class CustcenePlayback : MonoBehaviour
 {
-    public VideoPlayer videoPlayer;
+    public bool endingCutscene;
+    public VideoPlayer  videoPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,11 @@ public class CustcenePlayback : MonoBehaviour
     void Update()
     {
         if (videoPlayer.clockTime >= videoPlayer.length)
-            SceneManager.LoadScene("MazeTest");
+        {
+            if (endingCutscene)
+                Application.Quit();
+            else
+                SceneManager.LoadScene("MazeTest");
+        }
     }
 }
