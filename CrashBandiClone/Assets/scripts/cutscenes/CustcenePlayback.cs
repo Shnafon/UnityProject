@@ -21,7 +21,7 @@ public class CustcenePlayback : MonoBehaviour
         if (videoPlayer.clockTime >= videoPlayer.length)
         {
             if (endingCutscene)
-                Application.Quit();
+                SceneManager.LoadScene("menu");
             else
                 SceneManager.LoadScene("MazeTest");
         }

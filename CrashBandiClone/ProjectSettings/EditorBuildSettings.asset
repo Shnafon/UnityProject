@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/game over.unity
     guid: 9878a69fd06761745bfb98e56b969ee7
+  - enabled: 1
+    path: Assets/Scenes/OutroCutscene.unity
+    guid: 77502dcfeb8aa9f4986d79cf4c420602
   m_configObjects: {}

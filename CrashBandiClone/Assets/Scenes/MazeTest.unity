@@ -3034,10 +3034,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605545696}
-  - component: {fileID: 605545695}
   - component: {fileID: 605545694}
   - component: {fileID: 605545697}
   - component: {fileID: 605545698}
+  - component: {fileID: 605545699}
+  - component: {fileID: 605545695}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3067,10 +3068,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 605545693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48016277ac32a2b45ac12920611dcf6e, type: 3}
+  m_Script: {fileID: 11500000, guid: bb7105bedd62877499f1eb74fb7fdd35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
+  jumpSpeed: 60
+  gravity: 100
+  rotateSpeed: 10
+  controller: {fileID: 605545699}
 --- !u!4 &605545696
 Transform:
   m_ObjectHideFlags: 0
@@ -3079,7 +3084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605545693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -532.9, y: 28.9, z: 531}
+  m_LocalPosition: {x: -620.1, y: 8.42, z: 66.7}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 422069585}
@@ -3117,6 +3122,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!143 &605545699
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605545693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.62
+  m_Radius: 0.1
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &625366789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6270,6 +6293,63 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1809968159960863475, guid: d164e6fca0b3f43448132a84e61feb17, type: 3}
+--- !u!1 &1269965813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269965816}
+  - component: {fileID: 1269965815}
+  - component: {fileID: 1269965814}
+  m_Layer: 0
+  m_Name: ArrivalWinGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1269965814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269965813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61267085f743c7b49910f9851568a089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1269965815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269965813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 45.373535, y: 34.522507, z: 26.866737}
+  m_Center: {x: -4.293274, y: 16.532951, z: -0.025875092}
+--- !u!4 &1269965816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269965813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -556.7, y: 2.5, z: -6.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275180623
 GameObject:
   m_ObjectHideFlags: 0

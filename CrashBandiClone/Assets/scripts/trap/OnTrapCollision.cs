@@ -9,6 +9,6 @@ public class OnTrapCollision : MonoBehaviour
     {
         Debug.Log("collision");
         Debug.Log(other.gameObject.name);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }
