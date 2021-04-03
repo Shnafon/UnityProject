@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class sendscore : MonoBehaviour
+public class sendtime : MonoBehaviour
 {
     public GameObject currentTime;
     void OnDisable()
