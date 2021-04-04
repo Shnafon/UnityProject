@@ -39,6 +39,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCandy: {fileID: 0}
+  pickup_sfx: {fileID: 8300000, guid: 4a65580e6f7178148bfadc12b6cd43a5, type: 3}
+  sfx_source: {fileID: 0}
 --- !u!1001 &7240746731671683623
 PrefabInstance:
   m_ObjectHideFlags: 0

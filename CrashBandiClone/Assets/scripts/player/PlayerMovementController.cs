@@ -11,6 +11,8 @@ public class PlayerMovementController : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     public CharacterController controller;
     public GameObject player;
+    public AudioClip jump_sfx;
+    public AudioSource sfx_source;
 
     // Update is called once per frame
     void Update()
@@ -35,6 +37,8 @@ public class PlayerMovementController : MonoBehaviour
             }
             if (Input.GetButton("Jump"))
             {
+                sfx_source.clip = jump_sfx;
+                sfx_source.Play();
                 moveDirection.y = jumpSpeed;
                 Debug.Log("Jump");
                 player.GetComponent<Animator>().SetBool("Running", false);
