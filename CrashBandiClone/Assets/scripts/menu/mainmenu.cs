@@ -40,4 +40,8 @@ public class mainmenu : MonoBehaviour
     {
         pm.SetActive(false);
     }
+    public void quit()
+    {
+        Application.Quit();
+    }
 }
