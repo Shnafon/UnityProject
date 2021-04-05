@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 88997656}
   - component: {fileID: 88997655}
   - component: {fileID: 88997654}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ScoreTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80.92817, y: -248.83716}
+  m_AnchoredPosition: {x: 80.92817, y: -159}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88997654
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 98328970}
   - component: {fileID: 98328969}
   - component: {fileID: 98328968}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TimeRemainingTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 81, y: -281}
+  m_AnchoredPosition: {x: 81, y: -203}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98328968
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 154208186}
   - component: {fileID: 154208188}
   - component: {fileID: 154208187}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -249}
+  m_AnchoredPosition: {x: 74.92248, y: -159.00287}
   m_SizeDelta: {x: 284, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154208187
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 738225380}
   - component: {fileID: 738225382}
   - component: {fileID: 738225381}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TimeRemaining
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -58, y: -278}
+  m_AnchoredPosition: {x: -58.07759, y: -199.73083}
   m_SizeDelta: {x: 284, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738225381
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 1961825680}
   - component: {fileID: 1961825684}
   - component: {fileID: 1961825683}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
