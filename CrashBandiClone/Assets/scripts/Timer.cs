@@ -38,4 +38,8 @@ public class Timer : MonoBehaviour
 
         timerTextRef.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+    void OnDisable()
+    {
+        PlayerPrefs.SetFloat("time", remaining_time);
+    }
 }
