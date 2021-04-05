@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CustceneSkip : MonoBehaviour
 {
+    public bool endingCustcene = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,10 @@ public class CustceneSkip : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.X))
         {
-            SceneManager.LoadScene("MazeTest");
+            if (!endingCustcene)
+                SceneManager.LoadScene("MazeTest");
+            else
+                SceneManager.LoadScene("WinScreen");
         }
     }
 }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OutroCutscene.unity
     guid: 77502dcfeb8aa9f4986d79cf4c420602
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 70264b75594f7c74a9a2dcd884dd485c
   m_configObjects: {}
