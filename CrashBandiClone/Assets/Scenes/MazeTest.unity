@@ -23940,7 +23940,7 @@ MonoBehaviour:
   speed: 60
   jumpSpeed: 65
   gravity: 100
-  rotateSpeed: 30
+  rotateSpeed: 270
   controller: {fileID: 605545699}
   player: {fileID: 610442577}
   jump_sfx: {fileID: 8300000, guid: 54d2835cab6be914aaf1a8ea174678c0, type: 3}

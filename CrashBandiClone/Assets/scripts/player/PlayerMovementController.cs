@@ -48,7 +48,7 @@ public class PlayerMovementController : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
         //Rotate Player
-        transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
+        transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime, 0);
 
     }
 }
