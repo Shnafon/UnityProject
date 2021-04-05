@@ -86201,6 +86201,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 178888334}
     m_Modifications:
+    - target: {fileID: 7758361168180629313, guid: 5d11b7e121741eb40a4d1c98f39baeca,
+        type: 3}
+      propertyPath: musicObj
+      value: 
+      objectReference: {fileID: 523757654}
+    - target: {fileID: 7758361168180629313, guid: 5d11b7e121741eb40a4d1c98f39baeca,
+        type: 3}
+      propertyPath: effectsObj
+      value: 
+      objectReference: {fileID: 214006204}
     - target: {fileID: 7758361168180629318, guid: 5d11b7e121741eb40a4d1c98f39baeca,
         type: 3}
       propertyPath: m_LocalPosition.x
