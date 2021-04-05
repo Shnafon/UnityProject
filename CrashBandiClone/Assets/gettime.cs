@@ -10,8 +10,9 @@ public class gettime : MonoBehaviour
     void Awake()
     {
         float time = PlayerPrefs.GetFloat("time");
-        int timin = (int) time/60;
-        int timsec = (int)(time - timin)/10;
+        int timeint = (int)time;
+        int timin = timeint/60;
+        int timsec = timeint%60;
         Text timetext = timeInt.GetComponent<Text>();
         timetext.text = System.Convert.ToString(timin) + ":" + System.Convert.ToString(timsec);
     }
