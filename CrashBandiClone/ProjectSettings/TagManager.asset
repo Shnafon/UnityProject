@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - candyUi
+  - pauseUI
   layers:
   - Default
   - TransparentFX
