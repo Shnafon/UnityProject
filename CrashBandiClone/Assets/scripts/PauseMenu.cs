@@ -5,6 +5,12 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     private GameObject[] pauseUI;
+    public GameObject effectsObj;
+    public GameObject musicObj;
+    AudioSource effectsSource;
+    AudioSource musicSource;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +20,8 @@ public class PauseMenu : MonoBehaviour
         {
             g.SetActive(false);
         }
+        effectsSource = effectsObj.GetComponent<AudioSource>();
+        musicSource = musicObj.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +39,20 @@ public class PauseMenu : MonoBehaviour
                 hidePaused();
                 Time.timeScale = 1;
             }
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            float modifier = 0.01f;
+
+            effectsSource.volume += modifier;
+            musicSource.volume += modifier;
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadMinus))
+        {
+            float modifier = 0.01f;
+
+            effectsSource.volume -= modifier;
+            musicSource.volume -= modifier;
         }
     }
 
